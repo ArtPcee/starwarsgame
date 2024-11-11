@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Battle</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1>Simulador de X-Wing</h1>
+
+    
+    <form id="configuracionForm">
+        <label for="numeroSerie">Número de Serie del X-Wing:</label>
+        <input type="text" id="numeroSerie" name="numeroSerie" required>
+
+        <br>
+
+        <label>
+            <input type="checkbox" id="quiereR2D2" name="quiereR2D2">
+            ¿Quieres tener a R2D2?
+        </label>
+
+        <br>
+
+        
+
+        <button type="button" onclick="iniciarPartida()">Iniciar Nueva Partida</button>
+    </form>
+
+    <br>
+
+    <form id="accionesForm">
+        <button type="button" onclick="botonDisparar()">Disparar</button>
+        <button type="button" onclick="botonReparar()">Reparar</button>
+    </form>
+
+    <br>
+    
+    <textarea name="Partida" id="Partida" cols="70" rows="40"></textarea>
+    <script src="js/classes/cazaestelar.js"></script>
+    <script src="js/classes/TieFigther.js"></script>
+    <script src="js/classes/xwing.js"></script>
+    <script src="iniciarPartida.js"></script>
+  
+</body>
+
+</html>
